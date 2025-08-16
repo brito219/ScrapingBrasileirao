@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class ClassificacaoGeral:
+class Geral:
     
     @staticmethod
     def get_classificacao_geral():
