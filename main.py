@@ -4,6 +4,7 @@ from scraping.classificacoes.mandante import Mandante
 from scraping.classificacoes.returno import Returno 
 from scraping.classificacoes.turno import Turno
 from scraping.classificacoes.visitante import Visitante
+from db.conexao import Conexao
 
 if __name__ == "__main__":
     print("Iniciando ETL")
@@ -37,3 +38,12 @@ if __name__ == "__main__":
     if df_visitante is not None:
         print("\n--- Tabela de Classificação dos Visitantes da Série B ---")
         print(df_visitante.head())
+        
+    # No seu main.py (temporariamente para teste)
+
+    print("Testando conexão com o SQL Server...")
+    if Conexao.testar_conexao():
+        print("Conexão de teste bem-sucedida!")
+    else:
+        print("Falha na conexão de teste.")
+
