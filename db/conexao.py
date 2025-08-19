@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Conexao:
-    
     @staticmethod
     def conectar():
         
@@ -17,6 +16,7 @@ class Conexao:
                 f"UID={os.getenv('DB_UID')};"
                 f"PWD={os.getenv('DB_PWD')};"
             )
+            print(f"Tentando conectar com: {conn_str}")
             conn = pyodbc.connect(conn_str)
             print("Conexão estabelecida com sucesso")  
             return conn
@@ -43,5 +43,7 @@ class Conexao:
         if conn:
             Conexao.fechar_conexao(conn)
             print("Teste de conexão bem-sucedido")
+            return True
         else:
             print("Teste de conexão falhou")
+            return False 
