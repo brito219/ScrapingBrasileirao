@@ -1,9 +1,9 @@
-from etl.extracao.scraping.classificacoes.geral import Geral
-from etl.extracao.scraping.classificacoes.ultimasDezRodadas import UltimasDezRodadas
-from etl.extracao.scraping.classificacoes.mandante import Mandante   
-from etl.extracao.scraping.classificacoes.returno import Returno 
-from etl.extracao.scraping.classificacoes.turno import Turno
-from etl.extracao.scraping.classificacoes.visitante import Visitante
+from etl.extracao.classificacoes.geral import Geral
+from etl.extracao.classificacoes.ultimasDezRodadas import UltimasDezRodadas
+from etl.extracao.classificacoes.mandante import Mandante   
+from etl.extracao.classificacoes.returno import Returno 
+from etl.extracao.classificacoes.turno import Turno
+from etl.extracao.classificacoes.visitante import Visitante
 from data.conexao import Conexao
 
 if __name__ == "__main__":
