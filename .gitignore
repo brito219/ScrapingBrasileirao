@@ -24,4 +24,4 @@ env/
 Thumbs.db
 
 
-.precommitconfig.yaml
+.pre-commit-config.yaml
